@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Portfolio</title>
+</head>
+<style>
+.Heading {
+}
+
+#about {
+  text-align:left;
+  font-family: monospace;
+}
+
+#title {
+  background-color:black ;
+  color:white;
+  
+  
+  text-align: center;
+  font-family: monospace;
+}
+
+#skills {
+  text-align: left;
+  font-family: monospace;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+  font-size: x-large;
+}
+
+.high {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+#projects {
+  font-family: monospace;
+  text-align: left;
+}
+
+#bulb {
+  background-color: gray;
+  
+  width:100px;
+  height:150px;
+  
+  border: 4px solid black;
+  
+  margin-left: 120px;
+  text-align: center;
+}
+
+#bar1,#bar2,#bar3,#bar4,#bar5 {
+  display:inline-block;
+  border:2px solid black;
+  
+  width: 50px;
+  height: 50px;
+  
+  margin:5px;
+}
+
+#rate {
+  text-align: center;
+}
+
+#Contacts {
+  font-family: monospace;
+}
+
+#Cdetails {
+  font-family: monospace;
+  text-align: right;
+}
+</style>
+<body id="body" bgcolor="cyan">
+  <div>
+    <h1 id="title">Hello There!</h1>
+    <div id="bodyy">
+      <div>
+      <ul>
+      <a href="#about">
+        <li>About Me</li>
+      </a>
+      
+      <a href="#skills">
+        <li>My Skills</li>
+      </a>
+        
+        <a href="#projects">
+          <li>My Projects</li>
+        </a>
+        
+        <a href="#Contacts">
+          <li>Contact Me</li>
+        </a>
+    </ul>
+  </div>
+  <hr>
+  <div class="Heading">
+    <h1 id="about">
+      About Me:
+    </h1>
+    <p>
+      My name is <b><a href="https://www.facebook.com/profile.php?id=100053745324191&mibextid=b06tZ0">Jhan Rhey Ocampo Liquiran</a></b>,
+      Im 15 years old, Third Year Highschool and my hobbies is creating webpages and playing Online Games like Mobile Legends, I was 14 years old when I had a knowledge about programming, and Im willing to learn more and accept any mistakes 
+    </p>
+  </div>
+  <hr>
+  <div class="Heading">
+    <h1 id="skills">My Skills:</h1>
+    <p>
+      I have knowledge about HTML, CSS, and <b id="Js">JavaScript</b> but I want to learn more... <br><br>
+      <b id="B"></b> <br>
+      
+      <h2 id="high">HTML</h2>
+      I can create my own <b id="high">Website</b> this is sample of my creation of websites I can also connect it to <b id="high">Css(Cascading Style Sheet)</b> and <b id="high">JavaScript</b>
+      
+      <h2 id="high">CSS</h2>
+      Styling my <b id="high">Webpage</b> was difficult for me because it has the visual of the webpage inshort Designing the Webpage Im still beginner for front-end developing.
+      
+      <h2 id="high">JavaScript</h2>
+      I could sample my skill in <b id="aLert">Windows Alert</b> <br><br>
+      My sample for JavaScript is <b id="v1">Changing Values</b>
+      <b id="v2"></b>
+    </p>
+  </div>
+      <hr>
+      <div>
+        <h1 id="projects">My Projects</h1>
+        <p><b>Project #1</b> <br>
+          Light Bulb
+        </p>
+        <div id="bulb">Light</div>
+        <h4 id="bulbON" style="text-align: center">ON</h4>
+        <h4 id="bulbOFF" style="text-align: center"> </h4>
+        <br><br>
+        <p><b>Project #2</b> <br>
+          Rating Box
+        </p>
+        <div id="bar1"> </div>
+        <div id="bar2"> </div>
+        <div id="bar3"> </div>
+        <div id="bar4"> </div>
+        <div id="bar5"> </div>
+        <br>
+        <h4 id="rate"> </h4>
+      </div>
+      <br>
+      <div>
+        <h1 id="Contacts">Get in Touch!</h1>
+        <p id="Cdetails">
+          Facebook:<input disabled="" type="text" placeholder="Jhan Rhey O. Liquiran"> 
+          <br>
+          Number:<input disabled="" type="number" placeholder="09** *** ****">
+          <br>
+          <button id="passHide">Hide</button>
+          <button id="passShow">Show</button>
+        </p>
+      </div>
+    </div>
+</body>
+<script>
+
+document.getElementById("Js").onclick = function(){
+  document.getElementById("B").innerHTML = 'This is one of my Skill in JavaScript'
+  document.getElementById("B").style.color = "green";
+  
+  document.getElementById("bodyy").fontFamily = "monospace";
+}
+  
+  document.getElementById("B").onclick = function() {
+    
+    document.getElementById("B").innerHTML = " ";
+  }
+  document.getElementById("aLert").onclick = function(){ 
+    $x = prompt("First Value to be sum") ;
+    $x = Number($x) ;
+    
+    $y = prompt("Second Value to be sum with") ;
+    $y = Number($y);
+    
+    $z = $x + $y ;
+    
+    alert("The answer is " + $z);
+  }
+  
+  document.getElementById("v1").onclick = function(){
+    document.getElementById("v1").innerHTML = " ";
+    
+    document.getElementById("v2").innerHTML = "to other Values"
+  }
+  
+  document.getElementById("v2").onclick = function(){
+    document.getElementById("v2").innerHTML = " ";
+    
+    document.getElementById("v1").innerHTML = "Changing Values";
+  }
+  
+  
+  document.getElementById("bulbON").onclick = function(){
+    document.getElementById("bulbON").innerHTML = " ";
+    
+    document.getElementById("bulb").style.backgroundColor = "yellow";
+    
+    document.getElementById("bulbOFF").innerHTML = "OFF" ;
+  }
+  
+  document.getElementById("bulbOFF").onclick = function(){
+    document.getElementById("bulbOFF").innerHTML = " ";
+    
+    document.getElementById("bulbON").innerHTML = "ON";
+    
+    document.getElementById("bulb").style.backgroundColor = "gray";
+  }
+  
+  //Rating Box
+  
+  document.getElementById("bar1").onclick = function(){
+    document.getElementById("bar1").style.backgroundColor = "yellow" ;
+    
+    document.getElementById("bar2").style.backgroundColor = "gray";
+    
+    document.getElementById("bar3").style.backgroundColor = "gray";
+    
+    document.getElementById("bar4").style.backgroundColor = "gray";
+    
+    document.getElementById("bar5").style.backgroundColor = "gray";
+    
+    document.getElementById("rate").innerHTML = "1 STAR <br> Not Satisfied";
+  }
+  
+  document.getElementById("bar2").onclick = function(){
+    document.getElementById("bar1").style.backgroundColor = "yellow" ;
+    
+    document.getElementById("bar2").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar3").style.backgroundColor = "gray";
+    
+    document.getElementById("bar4").style.backgroundColor = "gray";
+    
+    document.getElementById("bar5").style.backgroundColor = "gray";
+    
+    document.getElementById("rate").innerHTML = "2 STAR <br> Its ok but not Satisfied enough";
+  }
+  
+  document.getElementById("bar3").onclick = function(){
+    document.getElementById("bar1").style.backgroundColor = "yellow" ;
+    
+    document.getElementById("bar2").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar3").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar4").style.backgroundColor = "gray";
+    
+    document.getElementById("bar5").style.backgroundColor = "gray";
+    
+    document.getElementById("rate").innerHTML = "3 STAR <br> Well Done";
+  }
+  
+  document.getElementById("bar4").onclick = function(){
+    document.getElementById("bar1").style.backgroundColor = "yellow" ;
+    
+    document.getElementById("bar2").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar3").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar4").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar5").style.backgroundColor = "gray";
+    
+    document.getElementById("rate").innerHTML = "4 STAR <br> Almost Satisfied";
+  }
+  
+  document.getElementById("bar5").onclick = function(){
+    document.getElementById("bar1").style.backgroundColor = "yellow" ;
+    
+    document.getElementById("bar2").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar3").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar4").style.backgroundColor = "yellow";
+    
+    document.getElementById("bar5").style.backgroundColor = "yellow";
+    
+    document.getElementById("rate").innerHTML = "5 STAR <br>  Satisfied";
+  }
+  
+  document.getElementById("rate").onclick = function(){
+    document.getElementById("bar1").style.backgroundColor = "transparent" ;
+    
+    document.getElementById("bar2").style.backgroundColor = "transparent";
+    
+    document.getElementById("bar3").style.backgroundColor = "transparent";
+    
+    document.getElementById("bar4").style.backgroundColor = "transparent";
+    
+    document.getElementById("bar5").style.backgroundColor = "transparent";
+    
+    document.getElementById("rate").innerHTML = " ";
+  }
+</script>
+</html>
